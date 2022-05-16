@@ -296,7 +296,7 @@ def dl(sub_path):
         with open(('/home/robin/twitfix/static/' + filename), 'wb') as output:
             output.write(mp4file.read())
 
-    print(' ➤ [[ PRESENTING FILE: '+ filename +', URL: https://fxtwitter.com/static/'+ filename +' ]]')
+    print(' ➤ [[ PRESENTING FILE: '+ filename +', URL: https://t.spad.uk/static/'+ filename +' ]]')
     r = make_response(send_file(('static/' + filename), mimetype='video/mp4', max_age=100))
     r.headers['Content-Type']   = 'video/mp4'
     r.headers['Sec-Fetch-Site'] = 'none'
